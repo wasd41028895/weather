@@ -1,0 +1,43 @@
+package com.example.liyin.weather.db;
+
+import org.litepal.crud.LitePalSupport;
+
+public class County extends LitePalSupport {
+    private int id;
+    private  String countyName;
+    private  String wearherId;
+    private  int cityId;
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setCountyName(String countyName) {
+        this.countyName = countyName;
+    }
+
+    public void setWearherId(String wearherId) {
+        this.wearherId = wearherId;
+    }
+
+    public void setCityId(int cityId) {
+        this.cityId = cityId;
+    }
+
+    public int getId() {
+
+        return id;
+    }
+
+    public String getCountyName() {
+        return countyName;
+    }
+
+    public String getWearherId() {
+        return wearherId;
+    }
+
+    public int getCityId() {
+        return cityId;
+    }
+}
